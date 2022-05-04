@@ -1,11 +1,14 @@
-Proceso MiPrimeraApp
+Proceso Ejercicio_1
 	
-	Definir nombre, apellido Como Caracter;
+	Definir edad Como Entero;
 	
-	Escribir "Escriba su nombre";
-	Leer nombre;
+	Escribir "Escriba su edad";
+	Leer edad;
 	
-	Escribir "Escriba su apellido";
-	Leer apellido;
+	si edad >= 18 Entonces
+		
+		Escribir "Usted es mayor de edad";
+		
+	FinSi
 	
 FinProceso

@@ -1,19 +1,14 @@
 Proceso Ejercicio_2
 	
-	Definir nombre, apellido Como Caracter;
 	Definir edad Como Entero;
-	Definir estatura Como Real;
-	
-	Escribir "Escriba su nombre";
-	Leer nombre;
-	
-	Escribir "Escriba su apellido";
-	Leer apellido;
 	
 	Escribir "Escriba su edad";
 	Leer edad;
 	
-	Escribir "Escriba su estatura";
-	Leer estatura;
+	si edad < 18 Entonces
+		
+		Escribir "Usted aún es un niño(a)";
+		
+	FinSi
 	
 FinProceso

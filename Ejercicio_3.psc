@@ -1,6 +1,7 @@
 Proceso Ejercicio_3
 	
-	Definir nombre, apellido, nombrepa, apellidopa, nombrema, apellidoma Como Caracter;
+	Definir nombre, apellido Como Caracter;
+	Definir edad Como Entero;
 	
 	Escribir "Escriba su nombre";
 	Leer nombre;
@@ -8,20 +9,17 @@ Proceso Ejercicio_3
 	Escribir "Escriba su apellido";
 	Leer apellido;
 	
-	Escribir "Escriba el nombre de su padre";
-	Leer nombrepa;
+	Escribir "Escriba su edad";
+	Leer edad;
 	
-	Escribir "Escriba el apellido de su padre";
-	Leer apellidopa;
-	
-	Escribir "Escriba el nombre de su madre";
-	Leer nombrema;
-	
-	Escribir "Escriba el apellido de su madre";
-	Leer apellidoma;
-	
-	Limpiar Pantalla;
-	
-	Escribir "Yo ",nombre," ",apellido," soy hijo de ",nombrepa," ",apellidopa, " y/e ",nombrema," ",apellidoma;
+	si edad >= 18 Entonces
+		
+		Escribir  nombre," ",apellido,", usted es mayor de edad, por lo tanto puede entrar a la fiesta";
+		
+	SiNo
+		
+		Escribir nombre, " ",apellido,", usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa";
+		
+	FinSi
 	
 FinProceso
