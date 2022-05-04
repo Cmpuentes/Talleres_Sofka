@@ -1,8 +1,11 @@
-Proceso Ejercicio_2
-	
+Proceso Arreglos_2_con_funcion
+	Definir vector Como Entero;
+	numeroAleatorios();
+FinProceso
+//----------------------------------------------------------------------------
+Funcion numeroAleatorios()
 	Definir vector, i Como Entero;
-	Dimension vector[20];
-	
+	Dimension  vector[20];
 	
 	para i <- 0 Hasta 19 Con Paso 1 Hacer
 		vector[i] <- azar(100);
@@ -30,6 +33,4 @@ Proceso Ejercicio_2
 			Escribir "[",vector[i],"]",", "; sin saltar;
 		FinSi
 	FinPara
-
-	
-FinProceso
+FinFuncion

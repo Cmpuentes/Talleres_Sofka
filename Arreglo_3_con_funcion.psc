@@ -1,4 +1,8 @@
-Proceso Ejercicio_3
+Proceso Arreglo_3_con_funcion
+		numerosPrimos();
+FinProceso
+//----------------------------------------------------------------------------
+Funcion numerosPrimos()
 	Definir a, b, num, contador, vector Como Entero;
 	Dimension vector[168];
 	b <- 0;
@@ -22,4 +26,5 @@ Proceso Ejercicio_3
 	para num <- 0 Hasta 167 Hacer
 		Escribir "[",vector[num],"]";
 	FinPara
-FinProceso
+FinFuncion
+	

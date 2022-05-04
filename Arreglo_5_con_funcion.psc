@@ -1,19 +1,29 @@
-Proceso Ejercicio_5
-	
-	definir matriz Como entero;
+Proceso Arreglo_5_con_funcion
+	Definir m, n Como Entero;
+	matris();
+	Escribir"";
+	Escribir "-------------------------------------------------------------------------";
+	Escribir "Ingrese la fila y columna de la cual desea ver el resultado";
+	Escribir "Fila";
+	leer m;
+	Escribir "Columna";
+	Leer n;
+	calculo(m, n);
+FinProceso
+//------------------------------------------------------------------------------
+Funcion matris()
 	Dimension matriz[10, 10];
-	Definir i, j, m, n, x Como Entero;
+	Definir i, j, x Como Entero;
 	
 	para x <- 1 hasta 10 Hacer
 		Escribir "     ", x-1," "; sin saltar
 	FinPara
-	
 	Escribir "";
 	
 	para i <- 1 Hasta 9 Hacer
 		Escribir " ", i-1," "; sin saltar
 		Para j <- 1 Hasta 10 Hacer
-		
+			
 			Escribir"[",j,"*",i," ] "; sin saltar
 			
 		FinPara
@@ -26,15 +36,11 @@ Proceso Ejercicio_5
 			escribir"[",i,"*",10,"] "; sin saltar
 		FinPara
 	FinPara
-	
-	Escribir"";
-	Escribir "-------------------------------------------------------------------------";
-	Escribir "Ingrese la fila y columna de la cual desea ver el resultado";
-	Escribir "Fila";
-	leer m;
-	Escribir "Columna";
-	Leer n;
-	
+FinFuncion
+//------------------------------------------------------------------------------
+Funcion calculo(m, n)
+	definir matriz Como entero;
+	Dimension matriz[10, 10];
 	si m = 0 & n = 0 Entonces
 		matriz[m,n] <- 1*1;
 		Escribir matriz[m,n];
@@ -277,5 +283,6 @@ Proceso Ejercicio_5
 		matriz[m,n] <- 10*10;
 		Escribir matriz[m,n];
 	FinSi
+
+FinFuncion
 	
-FinProceso
