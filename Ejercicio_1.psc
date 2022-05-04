@@ -1,14 +1,14 @@
 Proceso Ejercicio_1
+	Definir fila, i, j Como Entero;
+	fila <- 10;
 	
-	Definir edad Como Entero;
-	
-	Escribir "Escriba su edad";
-	Leer edad;
-	
-	si edad >= 18 Entonces
+	Para i <- 1 Hasta fila Con Paso 1 Hacer
 		
-		Escribir "Usted es mayor de edad";
+		Para j <- 1 Hasta i Con Paso 1 Hacer
+			Escribir "*" Sin Saltar;
+		FinPara
 		
-	FinSi
-	
+		Escribir "";
+		
+	FinPara
 FinProceso

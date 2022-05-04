@@ -1,25 +1,35 @@
 Proceso Ejercicio_3
 	
-	Definir nombre, apellido Como Caracter;
-	Definir edad Como Entero;
+	Definir n, i, j , k, v, t, m Como Entero;
+	// i = iteración general
+	// j = espacios
+	// k = asteriscos
 	
-	Escribir "Escriba su nombre";
-	Leer nombre;
-	
-	Escribir "Escriba su apellido";
-	Leer apellido;
-	
-	Escribir "Escriba su edad";
-	Leer edad;
-	
-	si edad >= 18 Entonces
+	n <- 10;
+	v <- 0;
+	Repetir
 		
-		Escribir  nombre," ",apellido,", usted es mayor de edad, por lo tanto puede entrar a la fiesta";
+		Para i <- n Hasta 1 Con Paso -1 Hacer
+			para j <- 1 Hasta i Con Paso 1 Hacer
+				Escribir Sin Saltar " ";
+			FinPara
+			para k <- i Hasta n Con Paso 1 Hacer
+				Escribir Sin Saltar "* ";
+			FinPara
+			Escribir "";
+		FinPara
+		Para  t <- 1 hasta 2 Con Paso 1 Hacer
+			Escribir "       * * *";
+		FinPara
+		Para m <- 1 hasta 2 Con Paso 1 Hacer
+			Escribir "     * * * * *";
+		FinPara
+		//Escribir "       * * *";
+		//Escribir "       * * *";
+		//Escribir "     * * * * *";
+		//Escribir "     * * * * *";
 		
-	SiNo
-		
-		Escribir nombre, " ",apellido,", usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa";
-		
-	FinSi
+		v <- v + 1;
+	Hasta Que v < n
 	
 FinProceso
