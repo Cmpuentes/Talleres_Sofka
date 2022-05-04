@@ -1,25 +1,35 @@
 Proceso Ejercicio_2
-	Definir asteriscos, espacios, n, fila, columnaespacios, columnaasterisco, i Como Entero;
-	n <- 10;
-	asteriscos <- 1;
-	espacios <- n - 1;
-	i <- 0;
 	
-	Mientras i < n Hacer
-		
-		Para i <- 1 Hasta n Con Paso 1 Hacer
-			Para columnaespacios <- 1 Hasta espacios Con Paso 1 Hacer
-				Escribir " "; sin saltar;
-			FinPara
-			Para columnaasterisco <- 1 Hasta asteriscos Con Paso 1 Hacer
-				Escribir "*"; sin saltar;
-			FinPara
-			Escribir ""; 
-			asteriscos <- asteriscos + 1;
-			espacios <- espacios - 1;
-		FinPara
-		
-		i <- i + 1;
-	FinMientras
+	Definir vector, i Como Entero;
+	Dimension vector[20];
+	
+	
+	para i <- 0 Hasta 19 Con Paso 1 Hacer
+		vector[i] <- azar(100);
+	FinPara
+	
+	para i <- 0 Hasta 19 Con Paso 1 Hacer
+		Escribir "[",vector[i],"]";
+	FinPara
+	
+	Escribir "-----------------------------------------------------";
+	Escribir "Pares";
+	
+	para i <- 0 Hasta 19 Con Paso 1 Hacer
+		si vector[i] % 2 = 0 Entonces
+			Escribir "[",vector[i],"]",", "; sin saltar;
+		FinSi
+	FinPara
+	
+	Escribir "";
+	Escribir "-----------------------------------------------------";
+	Escribir "Impares";
+	
+	Para i <- 0 Hasta 19 Con Paso 1 Hacer
+		si vector[i] % 2 <> 0 Entonces
+			Escribir "[",vector[i],"]",", "; sin saltar;
+		FinSi
+	FinPara
+
 	
 FinProceso

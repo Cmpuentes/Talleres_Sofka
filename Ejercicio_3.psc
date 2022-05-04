@@ -1,35 +1,25 @@
 Proceso Ejercicio_3
-	
-	Definir n, i, j , k, v, t, m Como Entero;
-	// i = iteración general
-	// j = espacios
-	// k = asteriscos
-	
-	n <- 10;
-	v <- 0;
-	Repetir
+	Definir a, b, num, contador, vector Como Entero;
+	Dimension vector[168];
+	b <- 0;
+	para num <- 1 Hasta 1000 Hacer
+		a <- 1;
+		contador <- 0;
 		
-		Para i <- n Hasta 1 Con Paso -1 Hacer
-			para j <- 1 Hasta i Con Paso 1 Hacer
-				Escribir Sin Saltar " ";
-			FinPara
-			para k <- i Hasta n Con Paso 1 Hacer
-				Escribir Sin Saltar "* ";
-			FinPara
-			Escribir "";
-		FinPara
-		Para  t <- 1 hasta 2 Con Paso 1 Hacer
-			Escribir "       * * *";
-		FinPara
-		Para m <- 1 hasta 2 Con Paso 1 Hacer
-			Escribir "     * * * * *";
-		FinPara
-		//Escribir "       * * *";
-		//Escribir "       * * *";
-		//Escribir "     * * * * *";
-		//Escribir "     * * * * *";
+		Mientras a <= num Hacer
+			si num mod a = 0 Entonces
+				contador <- contador + 1;
+			FinSi
+			a <- a + 1;
+		FinMientras
 		
-		v <- v + 1;
-	Hasta Que v < n
+		si contador = 2 Entonces
+			vector[b] <- num;
+			b <- b + 1;
+		FinSi
+	FinPara
 	
+	para num <- 0 Hasta 167 Hacer
+		Escribir "[",vector[num],"]";
+	FinPara
 FinProceso

@@ -1,14 +1,18 @@
 Proceso Ejercicio_1
-	Definir fila, i, j Como Entero;
-	fila <- 10;
 	
-	Para i <- 1 Hasta fila Con Paso 1 Hacer
-		
-		Para j <- 1 Hasta i Con Paso 1 Hacer
-			Escribir "*" Sin Saltar;
-		FinPara
-		
-		Escribir "";
-		
+	Definir vector, i Como Entero;
+	Dimension vector[5];
+	
+	Escribir "Valores para llenar el vector de longitud 5";
+	Para i <- 0 hasta 4 Con Paso 1 Hacer
+		Escribir "Ingrese un número";
+		Leer vector[i];
 	FinPara
+	
+	Escribir "------------------------------------------------------------------";
+	
+	para i <- 0 Hasta 4 Con Paso 1 Hacer
+		Escribir"[",i,"] = ", vector[i];
+	FinPara
+	
 FinProceso
